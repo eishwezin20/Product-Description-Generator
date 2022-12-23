@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Product Description Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="spinner.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h2 class="text-center">Generate Description for your Product</h2>
+    		
+    			<p id="introText" class="text-center">Enter Product Name and Keywords to generate Description</p>
+    			
+    			<form>
+    				<div id="weightInput">
+    					<p>Please Enter Product Name<br>( example: Keyboard )</p>
+    		     		<input placeholder="Type Name Here" id="weight" type="text" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p>And your Keywords here <br>(example: Modern, gaming, 6")</p>
+	    				 <input placeholder="separate in commas for better output" id="height" type="text" name="b"/> 
+    				</div>
+    		     <button type="button" class="btn" onclick="overwrite()">GENERATE</button>
+				 
+    		</form>
+    		<div id="results" class="text-center">Your product description will appear here</div>
+    	</div>
+    </div>
+	<script src="main.js"></script>
+	<div class="spinner"></div>
+</body>
+</html>
